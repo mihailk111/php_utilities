@@ -48,10 +48,9 @@ class exTime
         return strval($this->time); 
     }
 
-
     private function checkIfEnded()
     {
-        if (!$this->wasEnded) throw new Exception("end() method was not called");
+        if (!$this->wasEnded) throw new \Exception("end() method was not called");
     }
     
 }
